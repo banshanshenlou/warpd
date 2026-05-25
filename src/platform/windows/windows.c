@@ -394,6 +394,14 @@ static const char *input_lookup_name(uint8_t code, int shifted)
 		strcpy(shifted_keymap[VK_CAPITAL], "capslock");
 		strcpy(keymap[VK_RETURN], "enter");
 		strcpy(shifted_keymap[VK_RETURN], "enter");
+		strcpy(keymap[VK_LEFT], "leftarrow");
+		strcpy(shifted_keymap[VK_LEFT], "leftarrow");
+		strcpy(keymap[VK_RIGHT], "rightarrow");
+		strcpy(shifted_keymap[VK_RIGHT], "rightarrow");
+		strcpy(keymap[VK_UP], "uparrow");
+		strcpy(shifted_keymap[VK_UP], "uparrow");
+		strcpy(keymap[VK_DOWN], "downarrow");
+		strcpy(shifted_keymap[VK_DOWN], "downarrow");
 
 		init++;
 	}

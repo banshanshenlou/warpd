@@ -81,6 +81,54 @@ make && sudo make install
 4. Click with `m` (left), `,` (middle), `.` (right)
 5. Press `Escape` to exit
 
+### Windows 11 Key Configuration
+
+On Windows, the config file is stored at:
+
+```text
+%APPDATA%\warpd\warpd.conf
+```
+
+Typical path:
+
+```text
+C:\Users\<YourUser>\AppData\Roaming\warpd\warpd.conf
+```
+
+You can edit it from the tray icon with `Edit config`.
+
+#### Example: Arrow keys for movement, `a s d` for mouse buttons
+
+```text
+left: leftarrow
+right: rightarrow
+up: uparrow
+down: downarrow
+
+buttons: a s d
+
+accelerator: q
+decelerator: w
+screen: e
+```
+
+Notes:
+
+- `buttons` maps mouse buttons in order: left, middle, right.
+- If you bind `a s d` to `buttons`, you should move conflicting defaults such as `accelerator`, `decelerator`, and `screen`.
+- After saving the config, restart `warpd` to reload the mappings.
+- To see valid key names on your build, run:
+
+```bash
+warpd --list-keys
+```
+
+- To see every configurable option, run:
+
+```bash
+warpd --list-options
+```
+
 ## Contributing
 
 Contributions are welcome! Please feel free to:
