@@ -402,6 +402,14 @@ static const char *input_lookup_name(uint8_t code, int shifted)
 		strcpy(shifted_keymap[VK_UP], "uparrow");
 		strcpy(keymap[VK_DOWN], "downarrow");
 		strcpy(shifted_keymap[VK_DOWN], "downarrow");
+		strcpy(keymap[VK_PRIOR], "pageup");
+		strcpy(shifted_keymap[VK_PRIOR], "pageup");
+		strcpy(keymap[VK_NEXT], "pagedown");
+		strcpy(shifted_keymap[VK_NEXT], "pagedown");
+		strcpy(keymap[VK_HOME], "home");
+		strcpy(shifted_keymap[VK_HOME], "home");
+		strcpy(keymap[VK_END], "end");
+		strcpy(shifted_keymap[VK_END], "end");
 
 		init++;
 	}
